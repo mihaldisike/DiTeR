@@ -4,6 +4,9 @@
 #The objective is to have the ability to SERVE PHP WEBPAGES, using nginx, using php-fpm WITH a php user that has SUDO priviledge
 #this data MUST be served ONLY on 127.0.0.1 interface! 
 
+#use as a reference https://github.com/dublinbranch/serverConfig/blob/master/php8
+#https://github.com/dublinbranch/serverConfig/blob/master/nginx.sh
+
 #also create the basic db and stuff to initialize the software after
 
 
