@@ -15,8 +15,11 @@ subtitute yourpassword with your password (in case not that obvious)
 echo "yourpassword" | sudo -S -k ./configure1.sh
 ```
 ## Test Server
+Please follow instructions and don't just copy and paste
+Copy the following code and open a new konsole tab and paste
+
 ```
 ssh user@remoteipaddress  -L 1080:127.0.0.1:80
 ```
-open following link in new tab
+after pasting the above use CTRL+rightclick(mouse) to open following link in new tab
 http://127.0.0.1:1080
