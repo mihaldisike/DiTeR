@@ -22,6 +22,8 @@ cp www.conf.default www.conf
 
 systemctl start php-fpm.service
 systemctl enable php-fpm.service
+systemctl start nginx.service 
+systemctl enable nginx.service
 
 #Maria DB Installation
 rpm --import https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
