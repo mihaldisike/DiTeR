@@ -8,7 +8,7 @@
 #https://github.com/dublinbranch/serverConfig/blob/master/nginx.sh
 #also create the basic db and stuff to initialize the software after
 
-zypper in -n nginx php8 php8-bcmath php8-devel php8-dom php8-fpm composer php8-opcache php8-mbstring php8-fileinfo php8-curl php8-mysql php8-soap php8-shmop php8-tidy php8-intl php8-gd php8-gettext php8-gmp install make findutils 
+zypper in -n nginx php8 php8-bcmath php8-devel php8-dom php8-fpm composer php8-opcache php8-mbstring php8-fileinfo php8-curl php8-mysql php8-soap php8-shmop php8-tidy php8-intl php8-gd php8-gettext php8-gmp findutils 
 
 printf "\n" | pecl install apcu
 echo "extension = apcu.so" > /etc/php8/conf.d/apcu.ini
