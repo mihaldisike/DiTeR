@@ -20,6 +20,7 @@ Copy the following code and open a new konsole tab and paste
 
 ```
 ssh user@remoteipaddress  -L 1080:127.0.0.1:80
+systemctl status nginx.service 
 ```
 ### after pasting the above use CTRL+rightclick(mouse) to open following link in new tab
 http://127.0.0.1:1080
