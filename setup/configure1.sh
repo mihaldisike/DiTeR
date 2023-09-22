@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 #In theory this file should be called like 
 #wget it or git clone the repo, and than call this .sh file. from it the script will start to handle all the stuff that is needed.
 #Check that this is beeing executed with elevated privileges, for the moment the error will make clear it should be
