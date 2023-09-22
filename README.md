@@ -13,7 +13,6 @@ chmod +x configure1.sh
 subtitute yourpassword with your password (in case not that obvious)
 ```
 echo "yourpassword" | sudo -S -k ./configure1.sh
-./configure1.sh
 ```
 ## Test Server
 ```
