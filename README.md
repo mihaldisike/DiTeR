@@ -10,10 +10,10 @@ wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/setup/configure1.s
 chmod +x configure1.sh
 ```
 ## Become root
-subtitute yourpassword with your password (in case not that obvious)
+subtitute yourpasswordhere with your root password (in case not that obvious)
 ```
 #not working "read yourpassword"
-echo "$yourpassword" | sudo -S -k ./configure1.sh
+echo "$yourpasswordhere" | sudo -S -k ./configure1.sh
 ```
 ## Test Server
 ### Please follow instructions and don't just copy and paste. 
