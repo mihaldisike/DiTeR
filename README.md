@@ -5,4 +5,5 @@ Disaster Team TRevolution - Trying to do it the right way!
 ```
 wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/setup/configure1.sh
 chmod +x configure1.sh
+./configure1.sh
 ```
