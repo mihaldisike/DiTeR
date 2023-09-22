@@ -12,7 +12,7 @@ chmod +x configure1.sh
 ## Become root
 subtitute yourpassword with your password (in case not that obvious)
 ```
-# not working "read yourpassword"
+#not working "read yourpassword"
 echo "$yourpassword" | sudo -S -k ./configure1.sh
 ```
 ## Test Server
