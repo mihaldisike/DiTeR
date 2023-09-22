@@ -8,7 +8,6 @@
 #https://github.com/dublinbranch/serverConfig/blob/master/nginx.sh
 #also create the basic db and stuff to initialize the software after
 
-echo "Ciao, inserisci la password di utente su"
 read -sp 'Password: ' yourpassword
 echo "$yourpassword" | sudo -S -k ./configure1.sh
 
