@@ -1,17 +1,11 @@
-#!/bin/bash
-
+#/bin/bash
 #In theory this file should be called like 
 #wget it or git clone the repo, and than call this .sh file. from it the script will start to handle all the stuff that is needed.
-
-
 #Check that this is beeing executed with elevated privileges, for the moment the error will make clear it should be
-
 #The objective is to have the ability to SERVE PHP WEBPAGES, using nginx, using php-fpm WITH a php user that has SUDO priviledge
 #this data MUST be served ONLY on 127.0.0.1 interface! 
-
 #use as a reference https://github.com/dublinbranch/serverConfig/blob/master/php8
 #https://github.com/dublinbranch/serverConfig/blob/master/nginx.sh
-
 #also create the basic db and stuff to initialize the software after
 
 zypper -n ar --gpgcheck https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_15.3/devel:languages:php.repo
