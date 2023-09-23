@@ -134,3 +134,7 @@ EOF
 
 #Insert Script Folder
 mkdir /srv/www/diter/
+chown wwwrun:run /srv/www/diter/
+chmod 755 /srv/www/diter/
+wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/demo/index.php /srv/www/diter/
+
