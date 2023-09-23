@@ -1,4 +1,4 @@
-#!/bin/bash
+art#!/bin/bash
 #In theory this file should be called like 
 #wget it or git clone the repo, and than call this .sh file. from it the script will start to handle all the stuff that is needed.
 #Check that this is beeing executed with elevated privileges, for the moment the error will make clear it should be
@@ -93,12 +93,8 @@ http {
         image/svg+xml;
 
     include conf.d/*.conf;
-    server {
-        #listen ...
-    
-    }
 
-     server {
+server {
         listen 80;
         server_name _;
         root /srv/www/diter;
@@ -131,6 +127,6 @@ chmod 755 /srv/www/diter/
 wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/demo/index.php -O /srv/www/diter/index.php
 chown wwwrun:www /srv/www/diter/index.php
 chmod 644 /srv/www/diter/index.php
-rcnginx reload
-rcphp-fpm reload
+rcnginx restart
+rcphp-fpm restart
 echo move to next commands - Test Server
