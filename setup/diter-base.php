@@ -3,7 +3,8 @@ function go ($base) {
     echo $base;
 }
 
-mkdir("/path/to/my/dir", 0700);
+mkdir("/srv/www/diter", 0755);
+
 
 $base =<<<EOD
    cat << EOF > /etc/nginx/php
