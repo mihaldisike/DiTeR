@@ -134,7 +134,9 @@ EOF
 
 #Insert Script Folder
 mkdir /srv/www/diter/
-chown wwwrun:run /srv/www/diter/
+chown wwwrun:www /srv/www/diter/
 chmod 755 /srv/www/diter/
 wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/demo/index.php -O /srv/www/diter/index.php
-#
+chown wwwrun:www /srv/www/diter/index.php
+chmod 644 /srv/www/diter/index.php
+echo move to next commands - Test Server
