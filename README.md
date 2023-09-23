@@ -8,6 +8,8 @@ acess your new server via ssh
 ```
 wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/setup/configure1.sh
 chmod +x configure1.sh
+echo Go to the become root step from documentation
+#
 ```
 ## Become root
 subtitute yourpasswordhere with your root password (in case not that obvious)
