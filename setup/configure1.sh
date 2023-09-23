@@ -100,7 +100,7 @@ http {
 
      server {
         listen *:80;
-        server_name pomos.local *.pomos.local;
+        server_name localhost;
         root /srv/www/diter;
         include /etc/nginx/php;
         access_log /var/log/nginx/diter.log postdata;
