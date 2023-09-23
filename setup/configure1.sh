@@ -22,4 +22,6 @@ systemctl start php-fpm.service
 systemctl enable php-fpm.service
 systemctl start nginx.service 
 systemctl enable nginx.service
+ 
+
 
