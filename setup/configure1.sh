@@ -99,8 +99,8 @@ http {
     }
 
      server {
-        listen *:80;
-        server_name localhost;
+        listen :80;
+        server_name _;
         root /srv/www/diter;
         include /etc/nginx/php;
         access_log /var/log/nginx/diter.log postdata;
@@ -136,5 +136,5 @@ EOF
 mkdir /srv/www/diter/
 chown wwwrun:run /srv/www/diter/
 chmod 755 /srv/www/diter/
-wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/demo/index.php /srv/www/diter/
-
+wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/demo/index.php -O /srv/www/diter/index.php
+#
