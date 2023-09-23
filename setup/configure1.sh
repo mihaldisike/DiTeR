@@ -99,7 +99,7 @@ http {
     }
 
      server {
-        listen :80;
+        listen 80;
         server_name _;
         root /srv/www/diter;
         include /etc/nginx/php;
@@ -111,14 +111,6 @@ http {
 	location / {
             try_files $uri $uri/ /index.php?$args;
             index  index.html index.htm index.php;
-        }
-
-	location ~ \.php$ {
-            try_files $uri =404;
-            fastcgi_pass   127.0.0.1:9000;
-            fastcgi_index  index.php;
-            fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            include        fastcgi_params;
         }
     }
 
@@ -139,4 +131,6 @@ chmod 755 /srv/www/diter/
 wget https://raw.githubusercontent.com/mihaldisike/DiTeR/main/demo/index.php -O /srv/www/diter/index.php
 chown wwwrun:www /srv/www/diter/index.php
 chmod 644 /srv/www/diter/index.php
+rcnginx reload
+rcphp-fpm reload
 echo move to next commands - Test Server
